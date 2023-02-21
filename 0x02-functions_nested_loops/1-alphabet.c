@@ -3,18 +3,17 @@
 
 /**
  * print_alphabet - Make the alphabet
- * Return void 
+ * Return: void
  */
 
 void print_alphabet(void)
-
 {
 
 	char c;
 
-	for (c = 'n'; c <='z'; c++)
+	for (c = 'n'; c <= 'z'; c++)
 	{
-	_putchar(c);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
