@@ -1,18 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Print the alphabetic
- * Return: Always (Success)
+ * prin_alphabet_10 - print the alphabet 10 times
+ * Return: void
  */
-
-int main(void)
-
+void print_alphabet_x10(void)
 {
 	char c;
+	int i = 0;
 
-	for (c = 'a'; c <= 'z'; c++)
-	putchar(c);
-	putchar('\n');
-	return (0);
-
+	while (i <= 9)
+	{
+		for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+		_putchar('\n');
+		i++;
+	}
 }
