@@ -13,10 +13,10 @@ int main(void)
 
 	for (count = 0; count < 50; count++)
 	{
-		sum = fib1 + fibs;
+		sum = fibl + fibs;
 		printf("%lu", sum);
 
-		fib1 = fibs;
+		fibl = fibs;
 		fibs = sum;
 
 		if (count == 49)
