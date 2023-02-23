@@ -14,12 +14,12 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		sum = fibl + fibs;
-		printf("%lu", sum);
+		printf("%lu" , sum);
 
 		fibl = fibs;
 		fibs = sum;
 
-		if (count == 50)
+		if (count == 49)
 			printf("\n");
 		else
 			printf(",");
