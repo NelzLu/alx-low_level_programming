@@ -19,7 +19,7 @@ int main(void)
 		fibl = fibs;
 		fibs = sum;
 
-		if (count == 49)
+		if (count == 48)
 			printf("\n");
 		else
 			printf(",");
