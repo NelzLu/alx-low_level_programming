@@ -1,23 +1,23 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_square - print square
- * @size: size of square in row/col units
+ * print_most_numbers - prints numbers except 2 and 4
+ *
+ * Return: returns nothing
  */
-void print_square(int size)
-{
-	int i;
-	int j;
 
-	if (size > 0)
+void print_most_numbers(void)
+{
+	int n;
+
+	for (n = 48; n < 58; n++)
 	{
-		for (i = 0; i < size; i++)
+		if ((n == 50)  || (n == 52))
 		{
-			for (j = 0; j < size; j++)
-				_putchar('#');
-			_putchar('\n');
+			continue;
 		}
+		putchar(n);
 	}
-	else
-		_putchar('\n');
+	putchar(10);
 }
