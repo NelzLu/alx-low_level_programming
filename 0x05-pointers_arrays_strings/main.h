@@ -1,11 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- * main - header file for prototype
- * void prototpyes (void)
- * int prototype (int)
- */
+#include <stdio.h>
+#include <unistd.h>
 
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
@@ -19,4 +16,4 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 
-#endif /* MAIN_H */
+#endif 
