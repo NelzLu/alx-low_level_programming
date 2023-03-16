@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -101,9 +101,9 @@ int main(int argc, char *argv[])
 			if (addl > 0)
 			{
 				add = (nout[k] - '0') + addl;
-			if (add > 9)
-				nout[k - 1] = (add / 10) + '0';
-			nout[k] = (add % 10) + '0';
+				if (add > 9)
+					nout[k - 1] = (add / 10) + '0';
+				nout[k] = (add % 10) + '0';
 			}
 			i = ln1 - 1, j--, addl = 0, ca++, k = lnout - (1 + ca);
 		}
